@@ -82,7 +82,7 @@ class FullscreenControl implements IControl {
     }
 
     _setupUI() {
-        const button = this._fullscreenButton = DOM.create('button', (('maplibregl-ctrl-fullscreen')), this._controlContainer);
+        const button = this._fullscreenButton = DOM.create('button', (('maplibregl-ctrl-fullscreen-swr')), this._controlContainer);
         DOM.create('span', 'maplibregl-ctrl-icon', button).setAttribute('aria-hidden', 'true');
         button.type = 'button';
         this._updateTitle();
@@ -113,8 +113,8 @@ class FullscreenControl implements IControl {
 
         if ((fullscreenElement === this._container) !== this._fullscreen) {
             this._fullscreen = !this._fullscreen;
-            this._fullscreenButton.classList.toggle('maplibregl-ctrl-shrink');
-            this._fullscreenButton.classList.toggle('maplibregl-ctrl-fullscreen');
+            this._fullscreenButton.classList.toggle('maplibregl-ctrl-shrink-swr');
+            this._fullscreenButton.classList.toggle('maplibregl-ctrl-fullscreen-swr');
             this._updateTitle();
         }
     }
