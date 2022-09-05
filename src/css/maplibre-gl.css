@@ -226,6 +226,52 @@
     }
 }
 
+.maplibregl-ctrl button.maplibregl-ctrl-fullscreen-swr .maplibregl-ctrl-icon {
+    background-image: svg-load("svg/maplibregl-ctrl-fullscreen-swr.svg", fill: #333);
+    width: 65%;
+    height: 65%;
+    margin: 17.5%;
+}
+
+.maplibregl-ctrl button.maplibregl-ctrl-shrink-swr .maplibregl-ctrl-icon {
+    background-image: svg-load("svg/maplibregl-ctrl-shrink-swr.svg");
+    width: 65%;
+    height: 65%;
+    margin: 17.5%;
+}
+
+@media (-ms-high-contrast: active) {
+    .maplibregl-ctrl button.maplibregl-ctrl-fullscreen-swr .maplibregl-ctrl-icon {
+        background-image: svg-load("svg/maplibregl-ctrl-fullscreen-swr.svg", fill: #fff);
+        width: 65%;
+        height: 65%;
+        margin: 17.5%;
+    }
+
+    .maplibregl-ctrl button.maplibregl-ctrl-shrink-swr .maplibregl-ctrl-icon {
+        width: 65%;
+        height: 65%;
+        margin: 17.5%;
+        background-image: svg-load("svg/maplibregl-ctrl-shrink-swr.svg", fill: #fff);
+    }
+}
+
+@media (-ms-high-contrast: black-on-white) {
+    .maplibregl-ctrl button.maplibregl-ctrl-fullscreen-swr .maplibregl-ctrl-icon {
+        width: 65%;
+        height: 65%;
+        margin: 17.5%;
+        background-image: svg-load("svg/maplibregl-ctrl-fullscreen-swr.svg", fill: #000);
+    }
+
+    .maplibregl-ctrl button.maplibregl-ctrl-shrink-swr .maplibregl-ctrl-icon {
+        width: 65%;
+        height: 65%;
+        margin: 17.5%;
+        background-image: svg-load("svg/maplibregl-ctrl-shrink-swr.svg", fill: #000);
+    }
+}
+
 .maplibregl-ctrl button.maplibregl-ctrl-compass .maplibregl-ctrl-icon {
     background-image: svg-load("svg/maplibregl-ctrl-compass.svg", fill: #333);
 }
